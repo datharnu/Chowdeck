@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  color: black;
+
+  opacity: 5;
+  cursor: pointer;
+}
+#left {
+  background-color: green;
+  /* padding: 15px; */
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+#right {
+  background-color: green;
+  /* padding: 15px; */
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+#left:hover {
+  opacity: 0.3;
+}
+#right:hover {
+  opacity: 0.3;
+}
+
+/* Phone animation */
+
+.logos {
+  overflow: hidden;
+}
+.logos-slide {
+  animation: 20s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Text Animation */
+.box {
+  font-size: 100px;
+  font-weight: bold;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.b1 {
+  animation: ani1 15s infinite;
+}
+.b2 {
+  animation: ani2 15s infinite;
+}
+.b3 {
+  animation: ani3 15s infinite;
+}
+.b4 {
+  animation: ani4 15s infinite;
+}
+.b5 {
+  animation: ani5 15s infinite;
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+@keyframes ani2 {
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes ani3 {
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+@keyframes ani4 {
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes ani5 {
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Image scroll */
+.container {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.scroll {
+  width: 100%; /* Or a specific width that fits within the container */
+  animation: animate var(--_animation-duration, 18s) linear infinite backwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* tooltip */
+.tool {
+  position: relative;
+  display: inline-block;
+}
+
+.tool:before {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 100%; /* Position above the button */
+  left: 50%;
+  transform: translateX(50%);
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 26px;
+  padding-right: 26px;
+  background-color: whitesmoke; /* Background color */
+  color: black; /* Text color */
+  border: 0 solid black; /* Border style */
+  border-radius: 40px; /* Border radius */
+  visibility: hidden;
+  opacity: 0;
+  font-size: 17px;
+  font-weight: bold;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tool:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tool-down:before {
+  transform: translateY(100%);
+  top: var(--tooltip-offset);
+  left: 30%;
+  right: auto;
+  bottom: auto;
+}
+.tool-down:after {
+  transform: translateX(-50%);
+  border-color: transparent transparent var(--tooltip-color) transparent;
+  top: var(--tooltip-tail-offset);
+  left: 50%;
+  right: auto;
+  bottom: auto;
+}
+
+/* Second tooltip */
+.tool2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tool2:before {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 100%; /* Position above the button */
+  left: 50%;
+  transform: translateX(50%);
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 26px;
+  padding-right: 26px;
+  background-color: whitesmoke; /* Background color */
+  color: black; /* Text color */
+  border: 0 solid black; /* Border style */
+  border-radius: 40px; /* Border radius */
+  visibility: hidden;
+  opacity: 0;
+  font-size: 17px;
+  font-weight: bold;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tool2:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tool2-down:before {
+  transform: translateY(210%);
+  top: var(--tooltip-offset);
+  left: 40%;
+  right: auto;
+  bottom: auto;
+}
+.tool2-down:after {
+  transform: translateX(-50%);
+  border-color: transparent transparent var(--tooltip-color) transparent;
+  top: var(--tooltip-tail-offset);
+  left: 50%;
+  right: auto;
+  bottom: auto;
+}
+
+/* stories card*/
+
+.mine {
+  margin: 0 auto;
+}
+
+.faqs {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04aa6d;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+}
