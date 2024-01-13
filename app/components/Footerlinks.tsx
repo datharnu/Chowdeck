@@ -346,7 +346,7 @@ export default function Footerlinks() {
             {/* Twitter */}
             <li className="h-24 font-bold  text-xl flex items-center justify-center border-white-20 border-r border-b">
               <a
-                href="https://twitter.com/chowdeck"
+                href="https://twitter.com/Harnu_haryo"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white flex items-center hover:underline"
@@ -360,7 +360,7 @@ export default function Footerlinks() {
             {/* Instagram */}
             <li className="h-24 font-bold text-xl flex items-center justify-center border-white-20 border-b">
               <a
-                href="https://www.instagram.com/chowdeck/"
+                href="https://www.instagram.com/dat_harnu/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white flex items-center hover:underline"
@@ -374,7 +374,7 @@ export default function Footerlinks() {
             {/* Facebook */}
             <li className="h-24 font-bold text-xl flex items-center justify-center border-white-20 border-r">
               <a
-                href="https://facebook.com/chowdeck"
+                href="https://web.facebook.com/emmanuel.odunayo.370"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white flex items-center hover:underline"
@@ -385,9 +385,10 @@ export default function Footerlinks() {
                 </div>
               </a>
             </li>
+            {/* LinkedIn */}
             <li className="h-24 font-bold text-xl flex items-center justify-center border-white-20">
               <a
-                href="https://www.linkedin.com/company/chowdeck/"
+                href="https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white flex items-center hover:underline"
