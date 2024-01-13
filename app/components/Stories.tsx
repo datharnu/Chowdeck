@@ -85,6 +85,7 @@ export default function Stories() {
             <Image
               src={pasta}
               className="sm:w-12 relative sm:bottom-1 bottom-7"
+              alt={"pasta"}
             />
           </span>
         </div>

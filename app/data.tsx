@@ -8,19 +8,6 @@ import cardbg1 from "../public/cardbg1.png";
 import cardbg2 from "../public/cardbg2.png";
 import cardbg3 from "../public/cardbg3.png";
 
-// export const images = [
-//   {
-//     id: 1,
-//     picture: AfricanMeal,
-//     title: "Get Started in 3",
-//     color: "#038B5C",
-//   },
-//   { id: 2, picture: FastFood, title: "Download the App", color: "#8C77EC" },
-//   { id: 3, picture: Drink, title: "Explore categories", color: "#FFC501" },
-//   { id: 4, picture: FitFarm, title: "Place your orders", color: "#FF884D" },
-//   { id: 5, picture: Pack, title: "Enjoy your meal", color: "#FFEDB3" },
-// ];
-
 export const storiesCard = [
   {
     id: 1,
@@ -357,12 +344,5 @@ export const resturants = [
     id: 1,
     Name: "Bukka Hut - Lekki2",
     icon: store,
-  },
-];
-
-export const Ans = [
-  {
-    id: 1,
-    info: "  Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.",
   },
 ];

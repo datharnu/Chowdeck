@@ -12,18 +12,6 @@ export default function Icon() {
           <div className="box b5 sm:text-5xl  md:text-5xl">Nna come chop</div>
         </div>
       </div>
-      {/* <div className="banner">
-        <div className="banner-text">
-          <h2>Company Name</h2>
-          <div className="text-wrapper">
-            <div className="box c1">Digital Marketing</div>
-            <div className="box c2">Frotend developer</div>
-            <div className="box c3">Backend developer</div>
-            <div className="box c4">UI / UX</div>
-            <div className="box c5">Odunayo the programmer</div>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

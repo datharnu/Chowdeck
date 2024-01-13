@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { ArrowRight } from "lucide-react";
 
@@ -11,7 +11,7 @@ type CardProps = {
   description2?: string | JSX.Element;
   description3?: string | JSX.Element;
   more: string;
-  image: string;
+  image: StaticImageData;
 };
 
 export default function CardComponent({

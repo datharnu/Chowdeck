@@ -1,7 +1,7 @@
 "use client";
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import AfricanMeal from "../../public/african-meals.svg";
 import FastFood from "../../public/Fastfoodxsnacks.svg";
 import FitFarm from "../../public/Fitfam.svg";

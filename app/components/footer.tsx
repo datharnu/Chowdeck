@@ -6,7 +6,7 @@ import icon3 from "../../public/Icon3.svg";
 import icon4 from "../../public/Icon4.svg";
 import icon2 from "../../public/Icon2.svg";
 
-import Testing from "./testing";
+import Footerlinks from "./Footerlinks";
 
 export default function Footer() {
   const [inputValue, setInputValue] = useState("");
@@ -124,10 +124,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <Testing />
+          <Footerlinks />
         </section>
         <div className="lg:hidden">
-          <Testing />
+          <Footerlinks />
         </div>
       </article>
     </section>

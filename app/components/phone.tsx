@@ -2,24 +2,24 @@
 import Badge from "./Badge";
 import React, { useEffect } from "react";
 import location from "../../public/location.svg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import icon4 from "../../public/Icon4.svg";
 import star from "../../public/star.svg";
 import icon5 from "../../public/Icon5.svg";
 import icon3 from "../../public/Icon3.svg";
 
 type PhoneProps = {
-  image: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  image5: string;
-  image6: string;
-  image7: string;
-  image8: string;
-  image9: string;
-  image10: string;
-  image11: string;
+  image: StaticImageData;
+  image2: StaticImageData;
+  image3: StaticImageData;
+  image4: StaticImageData;
+  image5: StaticImageData;
+  image6: StaticImageData;
+  image7: StaticImageData;
+  image8: StaticImageData;
+  image9: StaticImageData;
+  image10: StaticImageData;
+  image11: StaticImageData;
 };
 
 export default function Phone({

@@ -7,7 +7,7 @@ import icon3 from "../../public/Icon3.svg";
 import icon4 from "../../public/Icon4.svg";
 import icon2 from "../../public/Icon2.svg";
 
-export default function Testing() {
+export default function Footerlinks() {
   return (
     <section className="flex">
       {/* logo and Verified */}

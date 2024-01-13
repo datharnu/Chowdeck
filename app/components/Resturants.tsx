@@ -22,7 +22,7 @@ export default function Resturants({}: Props) {
                   >
                     <h2 className="text-lg font-semibold">{Name}</h2>
                     <span className="bg-green-100 rounded-full p-2 relative inline-block">
-                      <Image src={icon} className="relative " />
+                      <Image src={icon} className="relative " alt={"icon"} />
                     </span>
                   </td>
                 );
