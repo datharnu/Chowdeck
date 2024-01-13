@@ -10,11 +10,13 @@ import Footerlinks from "./Footerlinks";
 
 export default function Footer() {
   const [inputValue, setInputValue] = useState("");
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     // Do something with the input value, e.g., submit it or perform an action
     console.log("Submitted value:", inputValue);
